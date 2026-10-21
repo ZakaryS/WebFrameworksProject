@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const ctrlLocations = require('../controllers/pages');
+const ctrlPages = require('../controllers/pages');
 
 /* GET home page. */
-router.get('/', ctrlLocations.login);
-router.get('/', ctrlLocations.register);
-router.get('/', ctrlLocations.home);
-router.get('/', ctrlLocations.product);
+router.get('/login', ctrlPages.login);
+router.get('/register', ctrlPages.register);
+router.get('/', ctrlPages.home);
+//router.get('/', ctrlPages.product);
 
 module.exports = router;

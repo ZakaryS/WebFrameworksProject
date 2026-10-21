@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  .row.banner
+    .col-12
+      h1= title
+  .row  
+    .col-12.col-md-4
+      each product in foods
+        .card 
+          .card-body
+            h4 
+              a(href="/product")= product.name 
+            img(src=product.image) 
+            p= product.mass + "g" 
+            p= "€" + product.cost 
+  

@@ -8,8 +8,7 @@ const productsCreate = (req, res) => {
         mass: req.body.mass,
         type: req.body.type,
         image: req.body.image
-    }).then(product => { res.status(201).json(product); }).catch(err => { res.status(400).json({ message: "Error creating location", error: err }); });
-    res.status(200).json({ "status" : "success" });
+    }).then(product => { res.status(201).json(product); }).catch(err => { res.status(400).json({ message: "Error creating product", error: err }); });
 };
 
 const productsByType = (req, res) => {
@@ -17,14 +16,14 @@ const productsByType = (req, res) => {
 };
 
 const productsReadOne = (req, res) => {
-    if (req.params && req.params._productid) {
-        Product.findById(req.params._productid).then(product => {
+    if (req.params && req.params.productid) {
+        Product.findById(req.params.productid).then(product => {
             if (!product){
                 return res.status(404).json({ message: "Product not found." });
             }
-            res.status(200).json({ "status" : "success" }).catch(err => {res.status(500).json({ message: "Error retrieving product", error: err }); });
-        });
-    } else { res.status(400).json({ message: "No locationid in request." }); }
+            res.status(200).json({ "status" : "success" });
+        }).catch(err => {res.status(500).json({ message: "Error retrieving product", error: err }); });
+    } else { res.status(400).json({ message: "No productid in request." }); }
 };
 
 const productsUpdateOne = (req, res) => {
