@@ -18,13 +18,13 @@ const home = (req, res) => {
             cost: 2.49,
             mass: 500,
             type: 'Vegetable',
-            image: 'https://imgs.search.brave.com/sV4ojgoMU6bzsULG_XdUTjsIcQ8lbMOxodBWyI4TZgE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzkv/NDY3LzgyMC9zbWFs/bC9mcmVzaC1vcmFu/Z2UtY2Fycm90LXdp/dGgtZ3JlZW4tdG9w/cy1hZ2FpbnN0LXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n'
+            image: 'https://imgs.search.brave.com/nmx1IUWLZVQ04xjR7qnDXv87S8aDY6eqRRhgyntdjIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/NzE3LzI1Ni9zbWFs/bC9mcmVzaGx5LWhh/cnZlc3RlZC1vcmdh/bmljLWNhcnJvdC13/aXRoLXZpYnJhbnQt/Z3JlZW4tbGVhdmVz/LW9uLXdoaXRlLWJh/Y2tncm91bmQtcG5n/LnBuZw'
         },{
             name: 'Leek',
             cost: 1.29,
             mass: 600,
             type: 'Vegetable',
-            image: 'https://imgs.search.brave.com/WwFQ7YAe39xINkMcX9J69V4uvb38G4dXvfCD5C8FqUU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucmF3cGl4ZWwu/Y29tL2ltYWdlX3Bu/Z19zb2NpYWxfcG9y/dHJhaXQvY3pObWN5/MXdjbWwyWVhSbEwz/SmhkM0JwZUdWc1gy/bHRZV2RsY3k5M1pX/SnphWFJsWDJOdmJu/UmxiblF2Y0hVeU16/TXpOREkyTFdsdFlX/ZGxMVEF4TFdwdllq/WXlNVjh4TFd0NmNu/SnVOV1ZyTG5CdVp3/LnBuZw'
+            image: 'https://imgs.search.brave.com/O3dAnKgVaTnFhPp6JHf2udNKbi3PcfuvQPusOx9Fd-0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDgv/NTE0LzYzMy9zbWFs/bC93YXRlcmNvbG9y/LWxlZWstaGFuZC1w/YWludGVkLXZlZ2V0/YWJsZXMtY2xpcGFy/dC1wbmcucG5n'
         },{
             name: 'Mushroom',
             cost: 1.79,
@@ -36,25 +36,25 @@ const home = (req, res) => {
             cost: 0.34,
             mass: 100,
             type: 'Vegetable',
-            image: 'https://imgs.search.brave.com/ydrmGWEua9E4DNOBzpTKZ-EnAONjapDhnxWOMcF6B0s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcHNk/L2dhcmxpYy1pc29s/YXRlZC1zdHlsZS1w/bmctd2l0aC13aGl0/ZS1iYWNrZ3JvdW5k/LWdlbmVyYXRpdmUt/aWFfMjA5MTkwLTI0/NzUzNS5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA'
+            image: 'https://imgs.search.brave.com/UnmSixpxpRsPl0NUMlVc8J9k5SK1AmrYhwdZbPFrcJI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzAv/ODA5Lzg3NC9zbWFs/bC9nYXJsaWMtbm8t/YmFja2dyb3VuZC1m/b29kLWZyZWUtcG5n/LnBuZw'
         },{
             name: 'Garlic Powder',
             cost: 0.49,
-            mass: 50,
+            mass: 75,
             type: 'Spice',
-            image: 'https://imgs.search.brave.com/_AbOaeQOlc-N9p-TUDKufLelylfMSaXcpGzzm2lmwUk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/Ym5haWwuaW1nYmlu/LmNvbS84LzcvOS9p/bWdiaW4tb3JnYW5p/Yy1mb29kLWdhcmxp/Yy1wb3dkZXItY3Vy/cnktcG93ZGVyLXNw/aWNlLWdhcmxpYy1Z/dW01YmFZWXR1UFlQ/NXNrMU45aUt5Z1FN/X3QuanBn'
+            image: 'https://imgs.search.brave.com/WC0p4oZe69mQD2pJAMUtth3bS5ykIv5MPYUHPTtUGNs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjYv/MzQxLzM0MS9zbWFs/bC9mcmVzaC1nYXJs/aWMtYnVsYi1jbG92/ZXMtYW5kLWdhcmxp/Yy1wb3dkZXItZm9y/LWNvb2tpbmctZnJl/ZS1wbmcucG5n'
         },{
             name: 'Salt',
-            cost: 0.49,
-            mass: 60,
+            cost: 1.30,
+            mass: 300,
             type: 'Spice',
-            image: 'https://imgs.search.brave.com/5s1t8bc6wAeSJieN3zRsu4RXzup4LT8tKhbOovs8T30/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvdGh1bWJu/YWlsL21jLWNvcm1p/Y2stc2VhLXNhbHQt/Z3JpbmRlci1wcm9k/dWN0LWltYWdlLWRi/NHR0MThiczJpdWx5/bm0uanBn'
+            image: 'https://imgs.search.brave.com/MR7jhzUs7j34pVSSsci55_-J9IgWeD2JMx3EXA-Cnzw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzMv/NDY5LzE4OC9zbWFs/bC9nbGFzcy1zYWx0/LXNoYWtlci13aXRo/LW1ldGFsLWNhcC1m/aWxsZWQtd2l0aC1j/b2Fyc2UtZ3JhaW5z/LW9mLXNhbHQtcG5n/LnBuZw'
         },{
             name: 'Black Pepper',
             cost: 0.99,
-            mass: 56.7,
+            mass: 75,
             type: 'Spice',
-            image: 'https://imgs.search.brave.com/WUHk-gy9PWtTVJh5cAXCkSjLXu7uWNIw8V2FcpCm3l4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzgyLzE1/L2QyLzgyMTVkMjJk/OThiMzFiNDU1MDE0/M2RlMzc4NTE0MDgz/LmpwZw'
+            image: 'https://imgs.search.brave.com/J6ASlchj5QFIfCL7y1ZWzwsfoN1vTNAmOXYQd4s3QuM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDgv/MDk0LzUxMS9zbWFs/bC9ibGFjay1wZXBw/ZXItb24tdHJhbnNw/YXJlbnQtYmFja2dy/b3VuZC1oaWdoLXJl/cy04ay1mcmVlLXBu/Zy5wbmc'
         }]
     });
 };
