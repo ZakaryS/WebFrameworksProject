@@ -15,5 +15,8 @@
     "morgan": "^1.12.1",
     "pug": "^3.0.4",
     "serve-favicon": "^2.5.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^21.2.28"
   }
 }
