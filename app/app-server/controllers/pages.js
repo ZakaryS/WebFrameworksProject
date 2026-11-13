@@ -1,3 +1,9 @@
+
+const request = require('request');
+const apiOptions = { server : 'http://localhost:3000' };
+if (process.env.NODE_ENV === 'production') { apiOptions.server = 'INSERT RENDER SERVER ADDRESS'; }
+const _renderHomepage = (req, res, foods) => { res.render('home', {title: 'Grocery App'}); };
+
 const login = (req, res) => {
     res.render('login', { title: "Login Page" });
 };
