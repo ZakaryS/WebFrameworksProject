@@ -26,13 +26,26 @@ const productsReadOne = (req, res) => {
             if (!product){
                 return res.status(404).json({ message: "Product not found." });
             }
-            res.status(200).json({ "status" : "success" });
+            res.status(200).json(product);
         }).catch(err => {res.status(500).json({ message: "Error retrieving product", error: err }); });
     } else { res.status(400).json({ message: "No productid in request." }); }
 };
 
 const productsUpdateOne = (req, res) => {
-    res.status(200).json({ "status" : "success" });
+    if (req.params && req.params.productid) {
+        Product.findByIdAndUpdate(req.params.productid, {
+            name: req.body.name,
+            price: req.body.price,
+            mass: req.body.mass,
+            type: req.body.type,
+            image: req.body.image
+        }, { new: true }).then(product => {
+            if (!product) {
+                return res.status(404).json({ message: "Product not found." });
+            }
+            res.status(200).json(product);
+        }).catch(err=> { res.status(400).json({ message: "Error updating product", error: err }); });
+    } else { res.status(400).json({ message: "No productid in request." }); }
 };
 
 const productsDeleteOne = (req, res) => {
