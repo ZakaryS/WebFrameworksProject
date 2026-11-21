@@ -49,7 +49,14 @@ const productsUpdateOne = (req, res) => {
 };
 
 const productsDeleteOne = (req, res) => {
-    res.status(200).json({ "status" : "success" });
+    if (req.params && req.params.productid) {
+        Product.findByIdAndDelete(req.params.productid).then(product => {
+            if (!product) {
+                return res.status(404).json({ message: "Product not found." });
+            }
+            res.status(200).json({ message: "Product deleted." });
+        }).catch(err => { res.status(400).json({ message: "Error deleting product", error: err }); });
+    } else { res.status(400).json({ message: "No productid in request." })}; 
 };
 
 module.exports = {
